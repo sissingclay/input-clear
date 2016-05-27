@@ -4,13 +4,13 @@ This is a web component that will clear value from an input field.
 
 ## Demo
 
-Need to add the demo here
+[Demo](http://sissingclay.github.io/input-clearout/)
 
 ## Install
-Install the component using Bower:
+Install the component using NPM:
 
 ```
-$ bower install input-password --save
+$ npm i input-clearout --save
 ```
 
 
@@ -19,13 +19,13 @@ $ bower install input-password --save
 Import Web Components' polyfill:
 
 ```
-<script src="bower_components/platform/platform.js"></script>
+npm install https://github.com/WebReflection/document-register-element
 ```
 
-Import Custom Element:
+Add Custom Element Script:
 
 ```
-<script src="../src/clear-input.js"></script>
+<script src="../dist/input-clearout.js"></script>
 ```
 
 Start using it!
@@ -37,9 +37,9 @@ Start using it!
 
 ##Options
 
-| Attribute      |    Options       | Default                                     | Description                                                                    |
-|:---------------|:-----------------|:--------------------------------------------| :------------------------------------------------------------------------------|
+| Attribute      | Options          | Default                                     | Description                                                                    |
+| ---            | ---              | ---                                         | ---                                                                            |
 | relative       | Boolean          | null                                        | Adds inline css style position: relative to parentNode                         |
 | input          | String           | sibling type INPUT                          | Add the cssSelector for the input to change. Needs to be inside the parentNode |
 | css            | String           | fa fa-times-circle-o                        | This is css class names for glyph. Default is using font awesome.              |
-| html           | String           | <span class="fa fa-times-circle-o"></span>  | This is the innerHTML used to create element.                                  |
+| html           | String           | ``` <span class="fa fa-times-circle-o"></span> ``` | This is the innerHTML used to create element.                                  |

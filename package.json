@@ -2,7 +2,7 @@
   "name": "input-clearout",
   "version": "1.0.0",
   "description": "This web component will clear value from sibling input field",
-  "main": "index.js",
+  "main": "./dist/input-clearout.min.js",
   "scripts": {
     "build": "./node_modules/.bin/uglifyjs --compress --mangle -- src/input-clearout.js > dist/input-clearout.min.js && cp src/input-clearout.js dist/input-clearout.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,5 +27,8 @@
   "devDependencies": {
     "local-web-server": "^1.2.4",
     "uglify-js": "^2.6.2"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
   }
 }
