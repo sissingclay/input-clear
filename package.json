@@ -26,9 +26,7 @@
   "homepage": "https://github.com/sissingclay/input-clear#readme",
   "devDependencies": {
     "local-web-server": "^1.2.4",
-    "uglify-js": "^2.6.2"
-  },
-  "dependencies": {
+    "uglify-js": "^2.6.2",
     "express": "^4.13.4"
   }
 }
