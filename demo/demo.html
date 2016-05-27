@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is to force IE to use the latest render engine it has -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>Clear Input</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <!-- This is a polyfill for custom elements -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/document-register-element/0.5.4/document-register-element.js"></script>
+</head>
+<body>
+
+    <form class="pure-form pure-form-aligned">
+
+        <div class="pure-control-group">
+            <label for="store-name">Name</label>
+            <input class="form-control user-success" maxlength="255" name="store[name]" type="text" value="1505505">
+            <cs-clearout></cs-clearout>
+            <span class="help-block">Please enter a unique store name</span>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="store-name">Name</label>
+            <input class="form-control user-success" id="store-name" maxlength="255" name="store[name]" type="text" value="asdfasdfasdf">
+            <cs-clearout relative="true" input=".user-success"></cs-clearout>
+            <span class="help-block">Please enter a unique store name</span>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="store-name">Name</label>
+            <input class="form-control user-success" id="store-name" maxlength="255" name="store[name]" type="text" value="asdfasdf">
+            <cs-clearout></cs-clearout>
+            <span class="help-block">Please enter a unique store name</span>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="store-name">Name</label>
+            <input class="form-control user-success" id="store-name" maxlength="255" name="store[name]" type="text" value="asdfasdf">
+            <cs-clearout></cs-clearout>
+            <span class="help-block">Please enter a unique store name</span>
+        </div>
+
+    </form>
+
+    <script src="../dist/input-clearout.js"></script>
+
+</body>
+</html>
