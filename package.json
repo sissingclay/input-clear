@@ -16,7 +16,8 @@
     "component",
     "input",
     "clear",
-    "input"
+    "input",
+    "web-components"
   ],
   "author": "Clay Sissing <claysissing@gmail.com>",
   "license": "ISC",
